@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passion beer</title>
+    <title>Menu Flex</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        
-        <img src="img/header.jpg" width="50%" alt="">
+        <nav role="menu">
+            <a href="#" role="menuitem" class="active">Accueil</a>
+            <a href="#" role="menuitem">Microbrasserie</a>
+            <a href="#" role="menuitem">Bieres</a>
+            <a href="#" role="menuitem">Contacter</a>
+            <a href="#" role="menuitem">Questions</a>
+        </nav>
     </header>
-    <body>
-        <div>Bieres et microbrasseries du quebec</div>
-        <div>Petite site web sur l'un de mes intérets, les micro du quebec</div>
-    </body>
+    <main>
+        <article>Le mon de des microbrasseries du Quebec
+            <picture class="box">
+                <source srcset="img/header.jpg" media="(max-width:300px)">
+                <source srcset="img/header.jpg">
+                <img src="img/header.jpg" alt="Description Montreal">
+            </picture>
+            Au Quebec, nous sommes choyés par la quantité et par la qualité de nos microbrasserie.
+
+            J'aime bien parcourir nos régions piur découvrir de nouveaux endroits et y déguster de nouvelles bi`res locales.
+
+        </article>
+        <aside>Aside. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate sed tempora
+            libero nam quibusdam distinctio, animi quos? Perspiciatis maxime, veritatis asperiores placeat facere
+            voluptates sit cum esse inventore? Odio?</aside>
+    </main>
     <footer>
-
-
+        Footer
     </footer>
 </body>
+
 </html>

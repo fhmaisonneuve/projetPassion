@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box; /* permet d'ignorer le padding du body quand fenêtre réduite */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+    font-family: 'Roboto', sans-serif;/*police importée*/
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh; /* à allier avec flex : 1 dans le main */
+}
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+    /*justify-content: flex-end;*/
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em;
+    display: block;
+}
+
+nav a:hover:not(.active) {
+    color: black;
+    background-color: rgb(157, 156, 182);
+    transition-duration: 0.5s;
+}
+
+nav a.active{
+    background-color: rgb(46, 46, 49);
+    color: black;
+}
+
+main{
+    flex: 1;
+    display: flex;
+}
+
+article{
+    flex: 1;
+}
+
+aside{
+    flex: 0 1 200px;
+    background-color: antiquewhite;
+}
+
+footer{
+    display: flex; /* juste pour pouvoir centrer horizontalement et verticalement */
+    background-color: black;
+    color: antiquewhite;
+    height: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+footer, article, aside{
+    padding: 1em;
+}
+
+.box{
+    max-width: 500px;
+}
+
+picture > img{
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    main, nav{
+        flex-flow: column;
+    }
+    
+    nav a {
+        text-align: center;
+        border-top: 1px solid;
+    }
+
+    nav, aside{
+        flex: 0 0 100px;
+    }
+}
