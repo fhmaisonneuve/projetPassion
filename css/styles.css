@@ -57,11 +57,12 @@ aside{
 
 footer{
     display: flex; /* juste pour pouvoir centrer horizontalement et verticalement */
+    font-size: small;
     background-color: black;
     color: antiquewhite;
     height: 1em;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 footer, article, aside{
