@@ -32,12 +32,12 @@ nav a {
 
 nav a:hover:not(.active) {
     color: black;
-    background-color: rgb(157, 156, 182);
+    background-color: antiquewhite;
     transition-duration: 0.5s;
 }
 
 nav a.active{
-    background-color: rgb(46, 46, 49);
+    background-color: rgb(157, 156, 182);
     color: black;
 }
 
@@ -75,6 +75,10 @@ footer, article, aside{
 
 picture > img{
     width: 100%;
+}
+
+article  picture > img{
+    width: 400px;
 }
 
 @media screen and (max-width: 700px) {
